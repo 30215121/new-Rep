@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>
+                <label for="adi"> Adı </label>
+                </td>
+                <td>
+                    <input type="text" name="adi" id="adi">
+                </td>
+                <td><label for="hobi">Hobiler</label></td>
+                <td rowspan="2">
+                    <input type="checkbox" name="Futbol" id="futbol"> 
+                    <label for="futbol">Futbol</label><br>
+                    <input type="checkbox" name="Voleybol" id="voleybol">
+                    <label for="voleybol">Voleybol</label><br>
+                    <input type="checkbox" name="Basketbol" id="basketbol">
+                    <label for="basketbol">Basketbol</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="soyadi">Soyadı</label>
+                </td>
+                <td>
+                    <input type="text" name="soyadi" id="soyadi">
+                </td>
+               
+            </tr>
+            <tr>
+                <td>
+                     <label for="cinciyet">Cinsiyet</label>               
+                </td>
+                <td>
+                    <input type="checkbox" name="cinsiyet" id="cinsiyetE">
+                    <label for="cinsiyet">Bay</label>    
+                    <input type="checkbox" name="cinsiyet" id="cinsiyetB">
+                    <label for="cinsiyet">Bayan</label>                    
+                </td>
+                <td>
+                    <label for="foto">Profil Fotoğrafı</label>
+                </td>
+                <td>
+                    <input type="file" name="foto" id="foto">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ilce" >İlçe</label>                    
+                </td>
+                <td>
+                    <select name="ilce" id="ilce" style="min-width:170px;" >
+                        <option value=""> </option>
+                        <option value="1">Ankara</option>
+                        <option value="2">Adana</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="tarih">Doğum Tarihi</label>             
+                </td>
+                <td>
+                    <input type="date" name="tarih" id="tarih">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="eposta">Eposta</label
+                        ></td>
+                <td>
+                    <input type="email" name="eposta" id="eposta">
+                </td>
+                <td >
+                    <label for="adres">Adres</label>
+                </td>
+                <td rowspan="3">
+                    <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="site">Kişisel Site</label>
+                </td>
+                <td>
+                    <input type="text" name="site" id="site">
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <label for="telefon">Telefon</label>
+                </td>
+                <td>
+                    <input type="text" name="telefon" id="telefon">
+                </td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Kayıt Ol"></td>
+            </tr>
+        </table>
+    </form>    
+</body>
+</html>

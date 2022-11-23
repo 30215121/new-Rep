@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <!--label 'ın for 'u input 'un Id si ile aynı'-->
+                <td> 
+                    <label for="eposta">Eposta</label> 
+                </td>
+                <td>
+                    <input type="email" name="eposta" id="eposta">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sifre">Şifre</label>
+                </td>
+                <td>
+                    <input type="password" name="sifre" id="sifre">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="kod">Guvenlik Kodu</label>
+                </td>
+                <td>
+                    <!--Sadece okunabilir yapmak için readonly yazdıkuda input'a yazılır-->
+                    <!--value içine yazdığımız değer görünüyor fakat değiştirilemiyor-->
+                    <!--backend'e name içine yazılan değer ile göndermeye çalışır-->
+                    <input type="text" name="kod" id="kod" value="abc" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td></td><!--bos bıraktım-->
+                <td> 
+                    <!--diable ile butonu pasif yaptık.-->
+                    <input type="submit" value="Kaydet" disabled>
+                    <input type="reset" value="Temizle">
+                    <!--Submite basınca Apex deki Map mantığında veriyi sürücüye gönderir.( Ad= ali,sifre=1234) gibi-->
+                </td>
+            </tr>
+                
+
+
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li class="kutu" id="kutu1">Ana Sayfa</li> <!--tum li lere aynı class ismini verdik-->
+            <li class="kutu">Hakkımızda</li>
+            <li class="kutu">İletişim</li>
+        </ul>
+    </nav>
+
+
+    <script>
+
+        let menu1 = document.querySelector(".menu"); // class ismi menu eolan elementi sectik.
+        console.log(menu1);
+
+        let sec = document.querySelector("#kutu1"); // id si kutu1 olan li yi sectik
+        console.log(sec);
+
+        console.log(sec.innerText); // innerText yazdıgım icin anasayfa secildi
+        
+        //sectigimiz li nin icerigini degistirelim.
+        sec.innerText = "Merhaba Dunya"; // Anasayfa yi merhaba dunya ile degistirdim
+
+        sec.innerText = "<b> Merhaba Dunya </b>"; // calismaz, innerText HTML tag larini algilamaz.
+        sec.innerHTML ="<b>Merhaba Dunya</b>"; //  calisir, innerHTML HTML taglarini algilar.
+        
+        let hepsi = document.querySelectorAll(".kutu");
+        console.log(hepsi);
+
+
+
+    </script>
+</body>
+</html>

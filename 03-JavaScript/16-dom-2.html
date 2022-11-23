@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .pink{ /* asagida boyle bir class yok. javascript ile(add) ekleyecegiz.*/
+        background-color: pink;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+</style>
+
+</head>
+<body>
+    <!--dom document object model demek-->
+    <h1 id = "baslik" class="name blue red">Merhaba</h1>
+    <p></p>
+
+    <script>
+        let stiller = document.querySelector("#baslik").classList; // classList name blue ve red i sececek
+        console.log(stiller);
+
+        stiller.add('pink'); //3- stillerin class listine pink'i ekledik.
+
+
+        document.querySelector("#baslik").classList.add("yellow");
+        document.querySelector("#baslik").classList.remove("yellow");
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+
+    <script>
+        var x = 5;
+        var x = 6;
+        console.log(x); // 6
+
+        x = 8;
+        console.log(x); //8
+        
+        // let lere aynı isimle iki degisken tanımlayamazsın hata verir. basina let yazmadan degiskene yeni deger verirsen 
+        // degerin update edilemsi olarak algilar hata vermez.
+        let y = 5;
+        let z = 6;
+        y = 7;
+        console.log(y);
+        
+        var x = 5;
+        var k;
+        const d = 2; // const lara ilk deger atanmak zorundadır
+
+        console.log(x,k,d); // araalrina virgul koyarak yazdirabilirsiniz.
+
+       let enBuyukTamSayi = Number.MAX_SAFE_INTEGER;
+       console.log(enBuyukTamSayi); // 9007199254740991
+       console.log(enBuyukTamSayi+5 == enBuyukTamSayi+6); // aralık disinda islem yapamadigi icin true dondurur. aralik disinde islem yaparsanız hata verir.
+
+
+       var testTamsayi = 9007199254740991123456n; // toplama islemi yapması icin 5n yazmak gerekir data tipleri aynı olsun diye
+       console.log(testTamsayi+5n == testTamsayi+6n); // n BigInt demek
+
+       let s;
+       console.log(s);
+       console.log(typeof(s));
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tbody>
+                <!--sunucuya gönderirken ad kullanır-->
+
+        <tr> 
+            <td><label for="">Adı Soyadı</label></td>
+            <td><input type="text" name="ad" id="ad" minlength="4" maxlength="30" required></td> 
+        </tr> 
+
+        <tr>
+            <td><label for="">Numara</label></td>
+            <td><input type="number" name="yas" id="yas" min="8" max="100"></td>
+         </tr>
+
+        <tr>
+            <td><label for="">Eposta</label></td>
+            <td><input type="email" name="eposta" id="eposta"  required> </td>
+         </tr> 
+         
+         <tr>
+
+           <td><label for="password">Password</label></td>
+           <td><input type="password" name="password" id="password"></td>
+        </tr>
+
+        <!--label in for u input'un id'si-->
+        <tr>
+           <td> <label for="search">Search</label></td>
+           <td><input type="search" name="search" id="search"></td>
+       </tr>
+
+        <tr>
+            <td><label for="">Site</label></td>
+            <td><input type="url" name="" id=""></td>
+        </tr>
+        <tr>
+            <td><label for="">Telefon</label></td>
+            <td><input type="tel" name="" id=""></td>
+        </tr>
+
+        <!--checkbox, hidden, range zorunlu alan olamaz-->
+        <tr>
+            <td><input type="hidden" name="id" value="456"></td>           
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Gonder"></td>
+        </tr>
+
+
+    </tbody>
+    </table>
+    </form>
+</body>
+</html>

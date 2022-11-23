@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" name="" id="s1" />
+    <input type="button" value="Goster" onclick="hesapla()" id="btnhesapla" />
+
+    <div id="lblGun"></div>
+    <script>
+      function hesapla() {
+        let sayi = document.querySelector("#s1").value;
+        sayi = Number(sayi);
+
+        switch (sayi) {
+          case 1:
+            document.querySelector("#lblGun").innerHTML = "Pazar";
+            break;
+
+          case 2:
+            vdocument.querySelector("#lblGun").innerHTML = "pazartesi";
+            break;
+
+          case 3:
+            document.querySelector("#lblGun").innerHTML = "sali";
+            break;
+
+          case 4:
+            document.querySelector("#lblGun").innerHTML = "carsamba";
+            break;
+
+          case 5:
+            document.querySelector("#lblGun").innerHTML = "persembe";
+            break;
+
+          case 6:
+            document.querySelector("#lblGun").innerHTML = "cuma";
+            break;
+
+          case 7:
+            document.querySelector("#lblGun").innerHTML = "cumartesi";
+            break;
+
+          default:
+            document.querySelector("#lblGun").innerHTML =
+              "1 ile 7 arasında rakam giriniz";
+        }
+      }
+    </script>
+  </body>
+</html>

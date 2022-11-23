@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const s1 = 2022;
+        const s2 = 1980;
+        console.log("Sonuc : "+ s1-s2); // Nan
+        console.log("Sonuc : "+ (s1-s2)); //42
+        console.log(`Sonuc : ${s1-s2}`); //42
+
+        const pi = 3;
+        const r = 3;
+        const cevre = 2*pi*r;
+        const alan = pi**r;
+        console.log(cevre,alan);
+        console.log("Cevre:"+ cevre,"Alan:"+alan);
+        console.log( `Cevre:${cevre}, Alan:${alan}`);
+
+        let a = 3; let b = a++; let c = --a;
+        console.log(a,b,c); // 3 3 3 
+
+        let x = 3; let y = ++x; let z = --x;
+        console.log(a,b,c); // 3 4 3
+        x += 6;
+        console.log(x);
+
+        let d = 2, e = d++ , f = --d;
+        console.log(d,e,f);
+        
+        const sayi = 123;
+        document.write("Birler basamagi :"+ sayi%10); // document.write ile drikt siteye yazdirir
+
+    </script>
+</body>
+</html>

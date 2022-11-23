@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Emekli ye de tıklayınca radio nun aktif olması icin label in for radio nun id si ayni olmalı-->
+    <input type="radio" name="ortak" id="emekli" onchange="hesapla('e')" />
+    <label for="emekli"> Emekli</label>
+    <br />
+    <input type="radio" name="ortak" id="calisan" onchange="hesapla('c')" />
+    <label for="calisan"> Calisan</label>
+
+    <div id="sonuc"></div>
+
+    <script>
+        function hesapla(tip){ // tip = e vaya c olur.Degisken ismidir. 
+            // laert(tip);
+            let maas = 20000;
+            maas = (tip == "e") ? (maas * 0.9) : maas ;
+
+            document.querySelector("#sonuc").innerHTML = `Maas = ${maas}`;
+        }
+
+    </script>
+  </body>
+</html>

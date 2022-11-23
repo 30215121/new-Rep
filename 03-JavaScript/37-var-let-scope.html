@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        function test(){
+            var x = "Merhaba";
+            let y = "Dünya";
+
+            if(true){
+                var a = "Ankara";
+                let b = "İzmir";
+            }
+            console.log(x, y, a);  // Merhaba Dünya Ankara
+            console.log(b); // hata verir.cunku let'le tanimlanan degisken bulundugu block scope disinda kullanilamaz
+        } test(); // fonksiyonu cagirmazsan calismaz.
+    </script>
+</body>
+</html>
